@@ -1,0 +1,488 @@
+:root {
+  font-family:
+    Inter,
+    Segoe UI,
+    Arial,
+    sans-serif;
+  color: #152d3a;
+  background: #f4f7f8;
+  font-synthesis: none;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+.button {
+  border: 1px solid #cbd5db;
+  background: white;
+  color: #173440;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+button:hover,
+.button:hover {
+  background: #eaf1f2;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.primary {
+  background: #086c63;
+  color: white;
+  border-color: #086c63;
+}
+.primary:hover {
+  background: #09574f;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bfccd2;
+  border-radius: 7px;
+  background: #fff;
+  color: #173440;
+}
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form > button {
+  align-self: flex-start;
+}
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+  margin: 18px 0 8px;
+}
+h2 {
+  font-size: 1.18rem;
+  margin: 0 0 14px;
+}
+h3 {
+  font-size: 1.05rem;
+  margin: 9px 0;
+}
+p {
+  color: #526772;
+  line-height: 1.6;
+}
+small {
+  color: #627782;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #00a89b;
+  outline-offset: 3px;
+}
+.auth {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+}
+.authintro {
+  background: #112e39;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10vw 7vw;
+}
+.authintro h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin: 35px 0 20px;
+}
+.authintro p,
+.authintro small {
+  color: #b9d3d9;
+}
+.eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: #70d6c5;
+}
+.authbox {
+  padding: 12vh 7vw;
+  align-self: center;
+}
+.authbox h2 {
+  font-size: 1.8rem;
+}
+.authbox form {
+  margin-top: 30px;
+}
+.authbox form button {
+  width: 100%;
+  margin-top: 10px;
+}
+.link {
+  border: 0;
+  background: none;
+  margin-top: 20px;
+  color: #086c63;
+  padding-left: 0;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+aside {
+  background: #102d38;
+  color: #d4e4e8;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+aside label {
+  font-size: 0.75rem;
+}
+aside select {
+  background: #1b3d48;
+  color: white;
+  border-color: #38555f;
+}
+aside button {
+  background: transparent;
+  color: #e0edef;
+  border-color: #46616a;
+}
+.brand {
+  font-size: 1.7rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  padding-bottom: 20px;
+}
+.brand span {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  color: #8babb5;
+  margin-top: 6px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0 auto;
+}
+nav a {
+  padding: 13px;
+  color: #c4d7de;
+  text-decoration: none;
+  border-radius: 8px;
+}
+nav a.active {
+  background: #1c484e;
+  color: #91e2d3;
+}
+aside button:hover {
+  background: #214852;
+}
+.content {
+  max-width: 1400px;
+  width: 100%;
+  padding: 25px 40px 60px;
+  min-width: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dde5e8;
+  padding-bottom: 22px;
+  margin-bottom: 25px;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  color: #627780;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.panel {
+  background: white;
+  border: 1px solid #e0e7e9;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 22px 0;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+.metric {
+  background: white;
+  padding: 23px;
+  border: 1px solid #dce6e8;
+  border-radius: 12px;
+}
+.metric span {
+  display: block;
+  font-size: 0.83rem;
+  color: #5f747d;
+}
+.metric strong {
+  display: block;
+  font-size: 2.7rem;
+  margin-top: 17px;
+  font-weight: 600;
+}
+.filters,
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: end;
+}
+.filters {
+  margin: 24px 0;
+}
+.filters label {
+  flex: 1;
+  min-width: 130px;
+}
+.inline label {
+  flex: 1;
+  min-width: 180px;
+}
+.inline button {
+  align-self: end;
+}
+.formgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.cards .panel {
+  margin: 0;
+}
+.badge {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 8px;
+  background: #e8f1f2;
+  font-size: 0.72rem;
+  color: #34616a;
+}
+.badge.high {
+  background: #fff0df;
+  color: #9c5914;
+}
+.badge.low {
+  background: #eef1f5;
+  color: #5f7185;
+}
+.taskrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid #e0e7e9;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 12px 0;
+}
+.taskrow > div {
+  min-width: 0;
+}
+.taskrow p {
+  margin: 5px 0;
+  font-size: 0.8rem;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.actions select {
+  width: auto;
+  max-width: 180px;
+}
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0;
+  font-size: 0.83rem;
+}
+.error {
+  background: #fff0ef;
+  color: #a43129;
+  padding: 12px;
+  border-radius: 8px;
+}
+.empty {
+  padding: 30px;
+  text-align: center;
+}
+.event,
+.comment {
+  padding: 18px 0;
+  border-bottom: 1px solid #dce5e8;
+}
+.event small {
+  display: block;
+  margin: 7px 0;
+}
+.event pre {
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: #516975;
+}
+p,
+h3 {
+  overflow-wrap: anywhere;
+}
+.prewrap {
+  white-space: pre-wrap;
+}
+.loading {
+  padding: 40px;
+}
+.check {
+  flex-direction: row;
+  align-items: center;
+}
+.check input {
+  width: auto;
+}
+.close {
+  float: right;
+}
+.details {
+  border-top: 4px solid #086c63;
+}
+@media (max-width: 1000px) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .taskrow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .layout {
+    grid-template-columns: 205px 1fr;
+  }
+  .content {
+    padding: 22px;
+  }
+  .authintro h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 650px) {
+  .auth {
+    grid-template-columns: 1fr;
+  }
+  .authintro {
+    padding: 35px;
+  }
+  .authintro h1 {
+    font-size: 2rem;
+  }
+  .authbox {
+    padding: 30px;
+  }
+  .layout {
+    display: block;
+  }
+  aside {
+    padding: 18px;
+    gap: 12px;
+  }
+  .brand {
+    padding: 0;
+    font-size: 1.3rem;
+  }
+  .brand span {
+    display: none;
+  }
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin: 0;
+  }
+  nav a {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+  .content {
+    padding: 20px 16px;
+  }
+  .formgrid,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .metrics {
+    gap: 10px;
+  }
+  .metric {
+    padding: 15px;
+  }
+  .metric strong {
+    font-size: 2rem;
+  }
+  .title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .panel {
+    padding: 18px;
+  }
+  .actions {
+    width: 100%;
+  }
+  .pager {
+    gap: 8px;
+  }
+  .pager span {
+    font-size: 0.7rem;
+  }
+}
