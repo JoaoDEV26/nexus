@@ -62,8 +62,3 @@ docker compose start
 
 O CI definido em `.github/workflows/ci.yml` verifica backend com PostgreSQL, build do frontend e inicialização em Docker. O resultado deve ser consultado na aba Actions após publicar o repositório.
 
-## Autoria e aprendizado
-
-Base preparada com assistência de IA para estudo de João Gabriel. Evolua o código, registre suas próprias mudanças e demonstre as decisões que consegue explicar. Não atribua a este projeto experiência profissional ou uso real ainda não comprovados.
-
-Licença de distribuição ainda não escolhida pelo autor. Não há credenciais de demonstração fixas no código da aplicação.
